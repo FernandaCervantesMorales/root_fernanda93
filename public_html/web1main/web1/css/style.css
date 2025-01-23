@@ -1,0 +1,123 @@
+ /* First example of a css rule*/
+body{
+    background-color: pink;
+}
+
+.head {
+    background-color: #ff5c8d;
+    border-radius: 2px;
+}
+
+a:hover {
+    color: deeppink;
+    rotate: 30deg;
+}
+
+a {
+    color: rgb(139, 0, 25);
+    font-family: "Micro 5", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: large;
+    text-align: center;
+}
+
+.headericon{
+    height: 21px;
+    width: 21px;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin-left: 2px;
+    font-size: 15px;
+    border: 2px solid #810314;
+}
+
+.bday{
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #f788ff;
+    border: 4px solid #7b00b0;
+}
+
+.bdaytext{
+    padding: 20px;
+}
+
+.buttonbdays{
+    width: 100%;
+    font-size: 30px;
+    font-family: "Micro 5", sans-serif;
+    background-size: 100%, 0;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 200ms;
+    border-bottom: 3px inset #a200e7;
+    border-left: 3px inset #7b00b0;
+    border-right: 3px inset #a200e7;
+    border-top: 3px inset #7b00b0;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.buttonbdays:hover, .buttonbdays:focus{
+    color: #e079ff;
+    background-size: 0, 100%;
+}
+
+.back-box {
+    background-color: rgb(255, 216, 218);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.web-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(251, 106, 147);
+}
+
+.et-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: lightskyblue;
+}
+
+.pc-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: mediumpurple;
+}
+
+.web2-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(169, 249, 249);
+}
+
+h1 {
+    color: rgb(44, 0, 9);
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  
+h2 {
+    color: #810314;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 4px solid #7b00b0;
+}
+
+.movie {
+    align-content: center;
+    background-color: #e079ff;
+    width: 50px;
+    border-radius: 2px;
+    border: 3px #7b00b0 solid;
+}

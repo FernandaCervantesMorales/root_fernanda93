@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(230, 184, 56);
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 184, 192);
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+}
+
+.circle.square {
+    border-radius: unset;
+}
+
+body {
+    background-color: rgb(124, 9, 26);
+    color: rgb(62, 7, 16);
+}

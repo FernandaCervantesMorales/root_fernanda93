@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./web_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./web_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./web_icon/favicon-16x16.png">
+    <link rel="manifest" href="./web_icon/site.webmanifest">
+
+    <title>Character Sheet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Micro+5&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url(./img/brown_flower_background.png);
+        }
+    </style>
+    <script src="character.js" defer></script>
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body>
+    <div id="panel">Click Here!</div>
+
+    <div class="head">
+        <div>
+            <h1>Project 2 - Character</h1>
+        </div>
+        <div>
+            <a href="../webstuff.html"><button class="button">Back to Main</button></a>
+        </div>
+    </div>
+
+    <div class="game">
+        <h2>Brook the Investigator</h2>
+        <div>
+            <a href=""><button class="gameon">Play The Game</button></a>
+        </div>
+    </div>
+    <div class="details">
+        <h2>Brooke Thompson</h2>
+        <div class="character">
+            <img src="img/body.svg" alt="charcter picture">
+        </div>
+        <div>
+            <h3>How she Spawned</h3>
+            <p>Brooke is a teenage detective</p>
+        </div>
+    </div>
+    <div class="design">
+        <h2>Design</h2>
+        <div class="drawing">
+            <figure>
+                <h3>Character Sketch</h3>
+                <img src="./img/character_sketch.jpeg" alt="character sketch">
+                <figcaption></figcaption>
+            </figure>
+
+        </div>
+    </div>
+    <div class="colors">
+        <h2>Color Palette</h2>
+        <div class="scroll-container">
+
+        </div>
+    </div>
+    
+    <script>
+        const panel = document.getElementById("panel");
+        panel.onclick = function() {
+            this.classList.toggle("slide-up");
+        }
+    </script>
+</body>
+</html>

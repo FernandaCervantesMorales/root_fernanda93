@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+header {
+    width: 200%;
+    height: 5px;
+    background-color: rgb(254, 177, 177);
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    header div {
+    width: 200px;
+    padding: 20px;
+}
+
+#banner {
+    background-image: url();
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+
+}
+
+h2 {
+    color: rgb(174, 60, 60);
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(108, 22, 29);
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#title {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+
+    color: rgb(173, 32, 62);
+    position: relative;
+    top: -70px;
+    left: 80px;
+}
+
+#title span {
+    font-size: 36px;
+}
+
+body {
+    background-color: rgb(255, 216, 218);
+}
+
+.boxes {
+    background-color: rgb(255, 216, 218);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+#about {
+    position: relative;
+    color:rgb(255, 185, 201);
+}
+
+.about {
+    background-color: rgb(255, 234, 245);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.grid-item a {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
+    gap: 5px;
+
+}
+
+#contact figure img {
+    width: 100px;
+}
+
+.contact {
+    background-color: rgb(255, 234, 245);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+    
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    
+    text-decoration: none;
+    position: relative;
+    top: -155px;
+    left: 650px;
+}
+
+a{
+    color: rgb(117, 5, 5);
+}
+
+nav a:hover {
+    color: deeppink;
+}
+
+main article p {
+    max-width: 65ch;
+}
+
+#interests img {
+    width: 120px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.interests {
+    background-color: rgb(255, 234, 245);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.copyright {
+    background-color: rgb(255, 234, 245);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+header, #banner, main, footer {
+    max-width: 2000px;
+}
+
+@media screen and (max-width:487px) {
+    nav {
+        font-size: 1rem;
+    }
+    header {
+        height: 140px;
+    }
+}

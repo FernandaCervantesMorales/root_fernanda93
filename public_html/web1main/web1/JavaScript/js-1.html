@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(255, 197, 202);
+        }
+        main img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Demo 1</h1>
+    <button id="loader" onclick="loadStuff()">Click Me!</button>
+    <main id="content"></main>
+    <!-- <audio src="sounds/sniffing-dog-102739.mp3" controls></audio> -->
+
+    <script>
+        alert("Hiii Y'all :3");
+        console.log("Page loaded successfully!");
+
+        /**
+         * Variables
+         * 
+         */
+
+        // dynamic variable "let"
+
+        let myName = "Fernanda";
+
+        // a constant variable "const"
+        const pi = 3.14159265
+
+        // Math operators: + = / *
+
+        console.log("PI x 7 = " + pi * 7);
+
+        // Concatenate Strings (text data) 
+        // with other Strings or dynamic data with +
+
+        /**
+         * F u n c t i o n s
+         */
+        
+        function eatPizza() {
+            alert("Yummy 🍕");
+        }
+
+        eatPizza();
+
+        // New ES6 Function
+        let makePizza = () => {
+            console.log("adding ingredients... and bake :");
+        };
+
+        const myContainer = document.getElementById("content");
+        let myAudio = new Audio("sounds/sniffing-dog-102739.mp3");
+
+        function loadStuff() {
+            myAudio.play()
+            myContainer.innerHTML = '<p>Haii</p><img src="https://dogtime.com/wp-content/uploads/sites/12/2023/09/GettyImages-164855910-1-e1694532950609.jpg"/>';
+        } 
+
+
+    </script>
+</body>
+</html>

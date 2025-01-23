@@ -1,0 +1,62 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gold;
+    line-height: 44px;
+
+    background-color: maroon;
+    /* text-align: center; */
+}
+
+header {
+    width: 200%;
+    height: 350px;
+    background-color: rgb(144, 11, 37);
+    padding: 10%;
+}
+
+header div {
+    width: 200px;
+    padding: 20px;
+}
+
+main article p {
+    max-width: 65ch;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.fancy-button {
+    background-color: rgb(233, 81, 81);
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 2px solid pink;
+    box-shadow: 2px 4px 10px #00000052;
+    font-weight: bold;
+    color: rgb(139, 0, 23);
+}
+
+.fancy-button:hover {
+    background-color: rgb(234, 90, 118);
+    color: rgb(199, 21, 24);
+}

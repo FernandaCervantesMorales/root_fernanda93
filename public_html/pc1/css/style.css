@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(138, 138, 235);
+    color: rgb(159, 72, 240);
+}
+
+a{
+    color: rgb(223, 148, 255);
+    display: inline-block;
+}
+
+a:hover{
+    color: darkorchid;
+}
+
+h1{
+    margin-top: 5px;
+    padding: 10px;
+    color: rgb(231, 206, 255);
+    font: size 50px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 4px 3px 1px rgb(109, 47, 156);
+}
+
+main article {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+main article img {
+    width: 100%;
+    height: auto;
+}
+
+div.scroll-container{
+    background-color: rgb(153, 24, 185);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+div.scroll-container img{
+    max-height: 300px;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(101, 49, 154);
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(76, 15, 134);
+    box-shadow: 2px 4px 10px #00000052;
+    font-weight: bold;
+    color: rgb(46, 8, 63);
+}
+
+button:hover {
+    background-color: rgb(106, 32, 175);
+    color: rgb(165, 88, 236);
+}
+
+.film-strip {
+    --s: 12px; /* control the size */
+    --c: #222;
+   
+    width: calc(20*var(--s));
+    aspect-ratio: 1.25;
+    background: 
+      conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
+      0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
+    border: var(--s) solid var(--c);
+    padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
+    box-sizing: content-box;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* you can add a filter for an oldish effect 
+    filter: sepia(1) brightness(0.9) grayscale(.2);
+    */
+  }
