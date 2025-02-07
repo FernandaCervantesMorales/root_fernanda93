@@ -8,3 +8,9 @@ body {
     background-color: rgb(169, 249, 249);
     color: rgb(128, 235, 251);
 }
+
+h1 {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
