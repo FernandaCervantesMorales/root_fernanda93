@@ -1,3 +1,8 @@
+body{
+    background-color: #b5c5ff;
+    color: #4f67bd;
+}
+
 .button {
     background-color: rgb(188, 255, 255);
     border: solid 1px rgb(140, 221, 251);
@@ -6,30 +11,98 @@
 }
 
 #lexy {
-    border-radius: 2px;
-    border-color: greenyellow;
+    padding: 1rem;
+}
+
+#lexy a{
+    border: solid 2px greenyellow;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 #lexy figure{
     position: relative;
 }
 
-#lexy a{
-    border: solid 2px greenyellow;
-    border-radius: 1rem;
-    overflow: hidden;
+#lexy .after{
+    opacity: 0;
+    top: 1.5rem;
+    position: relative;
+    transition: 1.5s;
 }
 
 #lexy img{
-    width: 100%;
+    width: 20%;
     object-fit: cover;
-    object-position: center;
+    object-position: center,center;
     position: absolute;
 }
 
-.button :hover{
+#flowers {
+    justify-content: center;
+    transform: translateY(200px);
+}
+
+#flowers img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.box{
+    position: relative;
+    perspective: 700px;
+}
+
+.box article{
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+
+.front, .back{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    backface-visibility: visible;
+    user-select: none;
+}
+
+.front{
+    position: absolute;
+    background: #5f7be2;
+    transform: rotateX(0deg) translate3d(0px, 100px, -100px);
+}
+
+.back{
+    position: absolute;
+    background: #4f67bd;
+    transform: rotateX(90deg) translate3d(0px, 0px, 0px);
+}
+
+.box:hover article{
+    transform: rotateX(-90deg);
+}
+
+/*animations & transitions*/
+
+.button:hover{
     background-color: rgb(106, 140, 255);
     border: solid 1px rgb(45, 94, 255);
-    border-radius: 1rem;
     color: rgb(200, 214, 255);
+
+    transition: color 1s;
+}
+
+
+
+#lexy a:hover section{
+    transform: translateY(0);
+}
+
+#lexy a:hover .after{
+    top: 0;
+    opacity: 1;
 }
