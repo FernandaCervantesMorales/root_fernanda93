@@ -73,17 +73,13 @@ body{
 .front{
     position: absolute;
     background: #5f7be2;
-    transform: rotateX(0deg) translate3d(0px, 100px, -100px);
+    transform: rotateX(0deg) translate3d(0px, -100px, 100px);
 }
 
 .back{
     position: absolute;
     background: #4f67bd;
-    transform: rotateX(90deg) translate3d(0px, 0px, 0px);
-}
-
-.box:hover article{
-    transform: rotateX(-90deg);
+    transform: rotateX(-90deg) translate3d(0px, 0px, 0px);
 }
 
 /*animations & transitions*/
@@ -105,4 +101,8 @@ body{
 #lexy a:hover .after{
     top: 0;
     opacity: 1;
+}
+
+.box:hover article{
+    transform: rotateX(90deg);
 }
