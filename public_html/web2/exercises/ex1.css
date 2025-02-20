@@ -39,8 +39,10 @@ body{
 }
 
 #flowers {
+    display: inline;
     justify-content: center;
     transform: translateY(200px);
+    padding: 1.50rem 2rem;
 }
 
 #flowers img{
@@ -82,6 +84,22 @@ body{
     transform: rotateX(-90deg) translate3d(0px, 0px, 0px);
 }
 
+.map{
+    background-color: blanchedalmond;
+    border: solid 2px blanchedalmond;
+    width: 300px;
+    height: 300px;
+}
+
+.magnifing-glass{
+    background-color: transparent;
+    border: solid 2px #000 ;
+    border-radius: 1rem;
+    width: 40%;
+    height: 40%;
+    transition: transform 1s ease-in;
+}
+
 /*animations & transitions*/
 
 .button:hover{
@@ -91,8 +109,6 @@ body{
 
     transition: color 1s;
 }
-
-
 
 #lexy a:hover section{
     transform: translateY(0);
@@ -105,4 +121,27 @@ body{
 
 .box:hover article{
     transform: rotateX(90deg);
+    transform-style: translate (-50%, -50%) rotate(90deg);
+}
+
+.map:hover .magnifing-glass{
+    animation: left-to-right 1s ease-in forwards infinite alternate;
+}
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateY(100%);
+    }
+
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
 }
