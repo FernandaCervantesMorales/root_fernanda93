@@ -1,0 +1,24 @@
+header {
+    background-image: url(/web2/project1/img/spa-header.jpeg);
+}
+
+h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(164, 249, 151);
+}
+
+h2 {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards {
+    display: grid;
+    align-content: center;
+}
