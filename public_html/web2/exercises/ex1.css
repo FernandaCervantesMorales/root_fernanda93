@@ -3,14 +3,28 @@ header {
 }
 
 body{
-    background-color: #b5c5ff;
-    color: #4f67bd;
+    background-color: #bb72e0;
+    color: #93ca7c;
 }
 
 main{
     display: grid;
 }
 
+h1{
+    font-family: "Jersey 10", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(83, 27, 113);
+}
+
+h2{
+    font-family: "Micro 5", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*objects*/
 .button {
     background-color: rgb(188, 255, 255);
     border: solid 1px rgb(140, 221, 251);
