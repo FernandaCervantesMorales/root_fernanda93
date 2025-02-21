@@ -1,6 +1,14 @@
+header {
+    background-image: url(/web2/exercises/img/header_ex.jpeg);
+}
+
 body{
     background-color: #b5c5ff;
     color: #4f67bd;
+}
+
+main{
+    display: grid;
 }
 
 .button {
