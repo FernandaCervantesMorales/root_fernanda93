@@ -15,6 +15,12 @@ h1 {
     font-style: normal;
 }
 
+h2 {
+    font-family: "Micro 5", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     background-color: rgb(58, 187, 230);
 }
