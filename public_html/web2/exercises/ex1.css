@@ -100,6 +100,8 @@ body{
     transition: transform 1s ease-in;
 }
 
+.st0{fill:#B3B3B3;}
+
 /*animations & transitions*/
 
 .button:hover{
@@ -143,5 +145,27 @@ body{
 
     100%{
         transform: translateX(100%);
+    }
+}
+
+#bottomchain{
+    animation: wavemaker 17s ease-in-out infinite alternate-reverse;
+}
+
+#topchain{
+    animation: wavemaker 13s ease-in-out infinite alternate;
+}
+
+footer{
+    width: 150vw;
+    overflow: hidden;
+}
+
+@keyframes wavemaker {
+    0% {
+        transform: translateX(-4vw);
+    }
+    100% {
+        transform: translateX(-20vw);
     }
 }
