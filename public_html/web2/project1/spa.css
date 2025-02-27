@@ -1,11 +1,13 @@
 header {
     background-image: url(/web2/project1/img/spa-header.jpeg);
+    height: 200px;
 }
 
 h1 {
     font-family: "Spicy Rice", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+    font-size: 200%;
 }
 
 body{
@@ -21,4 +23,12 @@ h2 {
 .cards {
     display: grid;
     align-content: center;
+}
+
+li {
+    border: solid 2px palevioletred;
+    background-color: pink;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-style: normal;
 }

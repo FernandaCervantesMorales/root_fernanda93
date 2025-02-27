@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url(/web2/img/𝗹𝘂𝘃𝗶𝗯𝘂𝗯𝘂⸃\ Ꮺ.jpg);
+    height: 200px;
+}
+
 body {
     background-color: rgb(169, 249, 249);
     color: rgb(128, 235, 251);
@@ -13,6 +18,12 @@ h1 {
     font-family: "Jersey 10", serif;
     font-weight: 400;
     font-style: normal;
+    color: rgb(38, 38, 88);
+}
+
+a {
+    color: rgb(69, 69, 144);
+    text-decoration: none;
 }
 
 h2 {
