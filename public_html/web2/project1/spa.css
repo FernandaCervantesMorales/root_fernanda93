@@ -1,13 +1,68 @@
 header {
     background-image: url(/web2/project1/img/spa-header.jpeg);
-    height: 200px;
+    height: 200%;
+    align-content: center;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.svg {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    position: sticky absolute;
+    padding-bottom: 2rem;
+}
+
+#bottomchain{
+    animation: wavemaker 13s ease-in-out infinite alternate-reverse;
+}
+
+#topchain{
+    animation: wavemaker 9s ease-in-out infinite alternate;
+}
+
+@keyframes wavemaker {
+    0% {
+        transform: translateX(-4vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+a {
+    color: black;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    align-content: last baseline;
+}
+
+.button {
+    background-color: rgb(135, 177, 255);
+    border: solid 1px rgb(89, 153, 216);
+    border-radius: 2px;
+    color: rgb(17, 76, 185);
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-style: normal;
+    size: 200%;
 }
 
 h1 {
     font-family: "Spicy Rice", serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
-    font-size: 200%;
+    font-size: 400%;
+    box-shadow: 5px rgb(21, 73, 26);
+    box-sizing: content-box;
+    border-radius: 2px;
 }
 
 body{
@@ -20,15 +75,24 @@ h2 {
     font-style: normal;
 }
 
+h3 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .cards {
     display: grid;
     align-content: center;
 }
 
 li {
+    display: grid;
     border: solid 2px palevioletred;
     background-color: pink;
-    font-family: "Spicy Rice", serif;
-    font-weight: 100;
-    font-style: normal;
+    padding-bottom: 2rem;
+}
+
+#shop {
+    background-color: rgb(121, 190, 115);
 }
