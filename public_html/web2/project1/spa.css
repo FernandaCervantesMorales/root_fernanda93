@@ -98,25 +98,29 @@ li {
 
 #shop {
     position: -webkit-sticky;
+    border: dashed 5px palevioletred;
+    border-radius: 2rem;
 
 }
 
 .renaissance {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(90, 190, 81);
+    background-color: rgb(252, 140, 185);
     gap: 20px;
 
 }
 
 #search {
-    align-content: center;
+    position: -webkit-sticky;
+    border: dashed 5px rgb(255, 142, 160);
+    border-radius: 2rem;
 }
 
 .shopping {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(89, 216, 78);
+    background-color: rgb(255, 168, 202);
     gap: 20px;
 }
 
@@ -125,13 +129,15 @@ li {
 }
 
 #how {
-    align-content: flex-end;
+    position: -webkit-sticky;
+    border: dashed 5px palevioletred;
+    border-radius: 2rem;
 }
 
 .advice {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(90, 190, 81);
+    background-color: rgb(252, 140, 185);
     gap: 20px;
 }
 
@@ -160,5 +166,10 @@ li {
 
 li:hover {
     background-image: url(/web2/project1/img/hearts.jpg);
-    transition: img 1s;
+
+    transition:  0.5s;
+}
+
+#shop:hover {
+    background-image: url(/web2/project1/img/bg_dev.jpeg);
 }
