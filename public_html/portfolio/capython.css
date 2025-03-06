@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: none;
+}
+
+header {
+    background-image: url(/portfolio/img/☀️.jpg);
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+    z-index: 9;
+}
+
+body {
+    background-color: #F7ACCD;
+}
+
+h1 {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+    color: #530101;
+}
+
+h2 {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #530101;
+}
+
+.button {
+    background-color: #71BCE9;
+    border: solid 1px rgb(89, 153, 216);
+    border-radius: 2px;
+    color: rgb(17, 76, 185);
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    align-content: center;
+}
+
+a {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #71BCE9;
+    text-decoration: dotted;
+}
+
+li {
+    display: grid;
+    border: solid 2px #F08A4B;
+    background-color: #F3CA40;
+    padding-bottom: 2rem;
+}

@@ -97,6 +97,12 @@ a {
     background-color: rgb(169, 249, 249);
 }
 
+.capython {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F08A4B;
+}
+
 h1 {
     color: rgb(44, 0, 9);
     font-family: "Barrio", system-ui;
