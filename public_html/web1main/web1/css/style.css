@@ -1,6 +1,13 @@
- /* First example of a css rule*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    background-image: url(/web1main/web1/css/9_16\ header.jpeg);
+    background-image: url(/web1main/web1/css/_\ \(3\).jpeg);
+
+    height: 100%;
 }
 
 body{
@@ -101,6 +108,12 @@ a {
     text-align: center;
     border-radius: 10px;
     background-color: #F08A4B;
+}
+
+.wordpress {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fffca3;
 }
 
 h1 {
