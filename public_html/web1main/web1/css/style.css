@@ -1,11 +1,11 @@
  /* First example of a css rule*/
-body{
-    background-color: pink;
+header {
+    background-image: url(/web1main/web1/css/9_16\ header.jpeg);
 }
 
-.head {
-    background-color: #ff5c8d;
-    border-radius: 2px;
+body{
+    background-image: url(/web1main/web1/css/_\ \(2\).jpeg);
+    background-color: pink;
 }
 
 a:hover {
