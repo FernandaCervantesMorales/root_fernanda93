@@ -25,7 +25,7 @@ a {
     font-family: "Micro 5", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: large;
+    font-size: 200%;
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ a {
 .back-box {
     background-color: rgb(255, 216, 218);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,3fr);
     gap: 20px;
 }
 
