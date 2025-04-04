@@ -14,6 +14,13 @@ body {
     color: rgb(128, 235, 251);
 }
 
+main {
+    margin: 5px;
+    background-color: #8dcaff;
+    border-radius: 20px;
+    border: 6px solid #0077e0;
+}
+
 h1 {
     font-family: "Jersey 10", serif;
     font-weight: 800;
@@ -28,12 +35,18 @@ a {
     font-style: normal;
     color: rgb(69, 69, 144);
     text-decoration: none;
+    font-size: 200%;
+    text-align: center;
 }
 
 h2 {
     font-family: "Jersey 10", serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 200%;
+    color: #005cad;
+    padding: 10px;
+    border-bottom: 4px solid #0077e0;
 }
 
 header {
