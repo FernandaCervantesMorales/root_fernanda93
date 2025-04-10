@@ -70,12 +70,14 @@ h1 {
 
 body{
     background-color: rgb(164, 249, 151);
+    background-image: url(/web2/project1/img/bg_spa.jpg);
 }
 
 h2 {
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #d3ffc6;
 }
 
 h3 {
@@ -97,7 +99,7 @@ li {
 }
 
 #shop {
-    position: -webkit-sticky;
+    position: relative;
     border: dashed 5px palevioletred;
     border-radius: 2rem;
 
@@ -108,10 +110,11 @@ li {
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(252, 140, 185);
     gap: 20px;
+    height: auto;
 }
 
 #search {
-    position: -webkit-sticky;
+    position: relative;
     border: dashed 5px rgb(255, 142, 160);
     border-radius: 2rem;
 }
@@ -121,15 +124,16 @@ li {
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(255, 168, 202);
     gap: 20px;
-
+    height: auto;
 }
 
 .youtube {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #how {
-    position: -webkit-sticky;
+    position: relative;
     border: dashed 5px palevioletred;
     border-radius: 2rem;
 }
@@ -139,20 +143,27 @@ li {
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(252, 140, 185);
     gap: 20px;
+    height: auto;
 }
 
 .info {
     padding: 10px;
     top: 0;
-    max-width: 5000px;
-    height: fit-content;
+    height: auto;
     align-content: center;
     margin: 10px auto;
     padding: 20px 40px;
 }
 
-.info img{
-    max-width: 500px; 
+.info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.capyskill {
+    border-radius: 20px;
+    border: 6px solid #ffc6da;
+    background-image: url(/web2/project1/img/bg_capyspa.jpg);
 }
 
 .button:hover{
@@ -165,8 +176,7 @@ li {
 
 li:hover {
     background-image: url(/web2/project1/img/hearts.jpg);
-
-    transition:  0.5s;
+    
 }
 
 #shop:hover {
