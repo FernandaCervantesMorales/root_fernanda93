@@ -124,6 +124,12 @@ a {
     background-color: #fffca3;
 }
 
+.thrilltalk {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #0a3e6c;
+}
+
 h1 {
     color: rgb(44, 0, 9);
     font-family: "Barrio", system-ui;
