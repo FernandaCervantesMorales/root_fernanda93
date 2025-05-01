@@ -112,6 +112,12 @@ a {
     background-color: rgb(169, 249, 249);
 }
 
+.portfolio {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ff6599;
+}
+
 .capython {
     text-align: center;
     border-radius: 10px;
