@@ -112,6 +112,12 @@ a {
     background-color: rgb(169, 249, 249);
 }
 
+.web3-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(193, 230, 255);
+}
+
 .portfolio {
     text-align: center;
     border-radius: 10px;
