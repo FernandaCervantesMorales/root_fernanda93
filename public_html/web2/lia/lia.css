@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     /*background-image: url(./img/lia_header.jpeg);*/
     background-color: #FCE0C7;
@@ -81,7 +85,7 @@ a:hover {
 
 .links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
 }
 
 .box {
@@ -132,13 +136,21 @@ figure {
 .info img {
     max-width: 100%;
     height: auto;
+    border: 3px dashed #FF89BB;
+
+    transition: 1s;
+}
+
+.info img:hover {
+    transform: scale(2);
 }
 
 #pagedoll {
     background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
-    bottom: 0; left: 0;
+    bottom: 0; 
+    right: 0;
     height: 200px;
-    padding-left: 50px;
+    padding-right: 50px;
     width: auto;
 }
 
@@ -146,8 +158,26 @@ footer {
     background-color: #FCE0C7;
     border-radius: 20px;
     border: 6px solid #C11120;
+    align-items: center;
 }
 
-@media screen and (mid-width: 525px){
+@media screen and (min-width: 768px){
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info img:hover {
+        transform: rotate(45deg);
+    }
+
+    #pagedoll {
+        background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
+        bottom: 0; 
+        left: 0;
+        height: 200px;
+        padding-left: 50px;
+        width: auto;
+    }
+} 
     
-}
