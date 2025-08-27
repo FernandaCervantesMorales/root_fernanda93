@@ -1,0 +1,250 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(/web1main/web1/css/_\ \(3\).jpeg);
+    border-radius: 20px;
+    border: 6px solid #bb0a1f;
+    height: 100%;
+}
+
+body{
+    background-image: url(main/main_page_bg.jpg);
+    background-color: pink;
+}
+
+main {
+    background-color: rgb(255, 227, 232);
+    border-radius: 20px;
+    border: 6px solid #bb0a1f;
+}
+
+pre {
+    display: none;
+    color: #ffeeee;
+}
+
+a:hover {
+    color: deeppink;
+    rotate: 30deg;
+}
+
+a {
+    color: rgb(139, 0, 25);
+    font-family: "Micro 5", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+}
+
+.headericon{
+    height: 21px;
+    width: 21px;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin-left: 2px;
+    font-size: 15px;
+    border: 2px solid #810314;
+}
+
+.bday{
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #ff88ae;
+    border: 4px solid #e7007b;
+    width: 50%;
+}
+
+.bdaytext{
+    padding: 20px;
+}
+
+.buttonbdays{
+    width: 100%;
+    font-size: 30px;
+    font-family: "Micro 5", sans-serif;
+    background-size: 100%, 0;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 200ms;
+    border-bottom: 3px inset #e7007b;
+    border-left: 3px inset #e7007b;
+    border-right: 3px inset #e7007b;
+    border-top: 3px inset #e7007b;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.buttonbdays:hover, .buttonbdays:focus{
+    color: #ff79a4;
+    background-size: 0, 100%;
+}
+
+.back-box {
+    background-color: rgb(255, 189, 200);
+    /*display: grid;
+    grid-template-columns: repeat(3,3fr);*/
+    gap: 10px;
+}
+
+.web-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(251, 106, 147);
+}
+
+.et-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: lightskyblue;
+}
+
+.pc-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: mediumpurple;
+}
+
+.web2-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(169, 249, 249);
+}
+
+.web3-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(193, 230, 255);
+}
+
+.mg1-box {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(209, 255, 144);
+}
+
+.portfolio {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ff6599;
+}
+
+.capython {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F08A4B;
+}
+
+.wordpress {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fffca3;
+}
+
+.thrilltalk {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #0a3e6c;
+}
+
+h1 {
+    color: rgb(44, 0, 9);
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 300%;
+  }
+  
+h2 {
+    color: #810314;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 4px solid #e00052;
+}
+
+h3 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff45a5;
+}
+
+.movie {
+    align-content: center;
+    background-color: #ff79ba;
+    width: 50px;
+    border-radius: 2px;
+    border: 3px #b00041 solid;
+}
+
+#pagedoll {
+    background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
+    bottom: 0; 
+    right: 0;
+    height: 200px;
+    padding-right: 50px;
+    width: auto;
+}
+
+footer {
+    background-color: rgb(255, 227, 232);
+    border-radius: 20px;
+    border: 6px solid #bb0a1f;
+    height: 100%;
+}
+
+@media screen and (min-width: 1020px){
+    * {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    body {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .back-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    pre {
+        position: fixed;
+        left: 0;
+        display: block;
+    }
+
+    .info img:hover {
+        transform: rotate(45deg);
+    }
+
+    #pagedoll {
+        background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
+        bottom: 0; 
+        left: 0;
+        height: 200px;
+        padding-left: 50px;
+        width: auto;
+    }
+} 
+
+/*@media screen and (min-width: 1020px){
+    body {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
