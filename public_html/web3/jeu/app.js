@@ -30,8 +30,26 @@ for (let boite of cases) {
             }
         }
         boite.active = false;
+        valide();
     });
 } 
+
+const valide = function () {
+    for (let patron of patrons) {
+        let val1 = cases[patron[0]].innerText;
+        let val2 = cases[patron[1]].innerText;
+        let val3 = cases[patron[2]].innerText;
+
+        if (val1 &&
+            val1 === val2 &&
+            val1 === val3) {
+                console.log(`Le gagnant est ${val1}`);
+                for (let boite of cases) {
+                    boite.active = false;
+                }
+            }
+    }
+}
 
 replayBtn.addEventListener("click", function () {
     for (let boite of cases) {
@@ -39,3 +57,4 @@ replayBtn.addEventListener("click", function () {
         boite.innerText = "";
     }
 });
+
