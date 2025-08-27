@@ -1,0 +1,16 @@
+#grille {
+    width: 30vmin;
+    height: 30vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#grille .case{
+    border: palevioletred solid 1px;
+    background-color: pink;
+    display: grid;
+    place-items: center;
+}
+
+body{
+    background-color: rgb(201, 231, 255);
+}

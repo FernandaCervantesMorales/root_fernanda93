@@ -1,0 +1,23 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+header {
+    /*background-image: url(/web1main/web1/css/_\ \(3\).jpeg);*/
+    border-radius: 20px;
+    border: 6px solid #4cb3fd;
+    height: 100%;
+}
+
+body{
+    /*background-image: url(/web1main/web1/css/_\ \(2\).jpeg);*/
+    background-color: rgb(92, 189, 253);
+}
+
+main {
+    background-color: rgb(192, 230, 255);
+    border-radius: 20px;
+    border: 6px solid #4cb3fd;
+}
