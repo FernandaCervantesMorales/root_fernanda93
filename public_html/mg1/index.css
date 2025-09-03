@@ -1,0 +1,98 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(./img/header_bg.jpg);
+    border-radius: 20px;
+    border: 6px dashed #5ac111;
+    height: 100%;
+    color: #000000;
+}
+
+body {
+    /*background-image: url(./img/body_bg.jpg);*/
+    background-color: rgb(181, 238, 96);
+}
+
+main {
+    background-image: url(./img/main_bg.jpg);
+    border: 6px dashed #5ac111;
+}
+
+.button {
+    background-color: #deffc6;
+    border: dashed 1px #5ac111;
+    border-radius: 2px;
+    color: #FF89BB;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+    text-align: center;
+}
+
+h2{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+}
+
+p{
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.subheading {
+    width: 30%;
+    border-radius: 20px;
+    border: 2px dashed #5ac111;
+    background-color: #deffc6;
+}
+
+article {
+    border-radius: 20px;
+    border: 2px dashed #5ac111;
+    background-color: #deffc6;
+}
+
+figure {
+    display: grid;
+}
+
+figure video {
+    max-width: 100%;
+    height: auto;
+    border: 3px dashed #5ac111;
+}
+
+@media screen and (min-width: 1020px) {
+    /*figure {
+        margin-right: 550px;
+    }*/
+
+    figcaption {
+        background-color: #5ac111;
+        border-radius: 10px;
+    }
+    
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
