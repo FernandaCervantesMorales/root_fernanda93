@@ -5,15 +5,25 @@
 }
 
 header {
-    /*background-image: url(/web1main/web1/css/_\ \(3\).jpeg);*/
+    background-image: url(./img/header_bg.jpg);
     border-radius: 20px;
     border: 6px solid #4cb3fd;
     height: 100%;
 }
 
 body{
-    /*background-image: url(/web1main/web1/css/_\ \(2\).jpeg);*/
+    background-image: url(./img/main_bg.jpg);
     background-color: rgb(92, 189, 253);
+}
+
+.button {
+    background-color: rgb(192, 230, 255);
+    border: 3px solid #4cb3fd;
+    border-radius: 2px;
+    color: #FF89BB;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 main {
@@ -21,3 +31,79 @@ main {
     border-radius: 20px;
     border: 6px solid #4cb3fd;
 }
+
+.subheading {
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid #1f81bf;
+    background-color: #91ccf0;
+}
+
+h1 {
+    font-family: "Geostar Fill", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    text-shadow: 3px 3px 6px #f8fcffe2;
+    color: aliceblue;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px #0e5b8b;
+}
+
+a {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0e5b8b;
+}
+
+a:hover {
+    color: aliceblue;
+
+    transition: color 0.5s;
+}
+
+footer {
+    background-color: rgb(192, 230, 255);
+    border-radius: 20px;
+    border: 6px solid #4cb3fd;
+}
+
+@media screen and (min-width: 1020px){
+    * {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 400%;
+    }
+
+    a {
+        font-size: 200%;
+    }
+
+    .subheading {
+    width: 20%;
+    margin-left: 50px;
+    }
+
+    article {
+        margin-left: 100px;
+    }
+   
+    #pagedoll {
+        background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
+        bottom: 0; 
+        left: 0;
+        height: 200px;
+        padding-left: 50px;
+        width: auto;
+    }
+} 
