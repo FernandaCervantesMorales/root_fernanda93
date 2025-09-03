@@ -19,13 +19,13 @@ const patrons = [
 for (let boite of cases) {
     boite.active = true;
     boite.addEventListener("click", function() {
-        if (boite.active) {
+      if (boite.active) {
             if (joueurX) {
-                boite.backgroundImage = "url('X.png')";
+                boite.style.backgroundImage = "url('X.png')";
                 joueurX = false;
             }
             else {
-                boite.backgroundImage = "url('O.png')";
+                boite.style.backgroundImage = "url('O.png')";
                 joueurX = true;
             }
         }
