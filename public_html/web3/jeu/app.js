@@ -2,6 +2,7 @@
 let cases = document.querySelectorAll(".case");
 let replayBtn = document.querySelector("#replay");
 let paneauMessage = document.querySelector("#message");
+panneauMessageGaganant = document.querySelector("#message img")
 
 let joueurX = true;
 let gagnant = '';
@@ -47,6 +48,8 @@ const valide = function () {
             val1 === val2 &&
             val1 === val3) {
                 console.log(`Le gagnant est ${val1}`);
+                panneauMessageGaganant.src = val1;
+
                 for (let boite of cases) {
                     boite.active = false;
                 }
@@ -54,10 +57,13 @@ const valide = function () {
     }
 }
 
+const audio = new Audio("restart.mp3");
 replayBtn.addEventListener("click", function () {
     for (let boite of cases) {
         boite.active = true;
-        boite.innerText = "";
+        boite.style.backgroundImage = "";
+        joueurX = true
     }
+    audio.play();
 });
 

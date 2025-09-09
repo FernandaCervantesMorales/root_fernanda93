@@ -1,12 +1,49 @@
+*{
+    margin: 5px;
+    padding: 0px;
+}
+header {
+    background-color: rgb(5, 65, 102);
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 5px dashed rgb(215, 7, 73);
+}
+
+main {
+    place-items: center;
+}
+
+h1{
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+    color: rgb(211, 48, 75);
+    text-shadow: 3px 3px 6px #f8fcffe2;
+}
+h2{
+  font-family: "Rubik Lines", system-ui;
+  font-weight: 400;
+  font-style: normal;  
+}
+
+h3{
+   font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+
 #grille {
-    width: 30vmin;
-    height: 30vmin;
+    width: 50vmin;
+    height: 50vmin;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
 }
 #grille .case{
     border: palevioletred solid 1px;
-    background-color: pink;
+    background-color: rgb(253, 156, 188);
     display: grid;
     place-items: center;
     background-size: contain;
@@ -14,11 +51,33 @@
 
 #grille .case:hover{
     border: palevioletred solid 1px;
-    background-color: rgb(235, 150, 164);
+    background-color: rgb(222, 64, 90);
     display: grid;
     place-items: center;
 }
 
+#message img{
+    max-width: 120px;
+}
+
+#replay{
+    background-color: rgb(5, 65, 102);
+
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+
+    border: 2px dashed rgb(215, 7, 73);
+    color: rgb(211, 48, 75);
+}
+
 body{
-    background-color: rgb(201, 231, 255);
+    background-color: rgb(1, 29, 52);
+}
+
+@media screen and (min-width: 1020px) {
+    h1 {
+    font-size: 400%;
+    }
 }
