@@ -21,6 +21,12 @@ body {
     background-color: rgb(181, 238, 96);
 }
 
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
 main {
     background-image: url(./img/main_bg.jpg);
     border: 6px dashed #5ac111;
@@ -34,6 +40,7 @@ main {
     font-family: "Tomorrow", sans-serif;
     font-weight: 300;
     font-style: italic;
+    
 }
 
 h1 {
@@ -59,7 +66,7 @@ p{
 }
 
 .subheading {
-    width: 30%;
+    width: 50%;
     border-radius: 20px;
     border: 2px dashed #5ac111;
     background-color: #deffc6;
@@ -86,6 +93,10 @@ figure video {
         margin-right: 550px;
     }*/
 
+    .subheading {
+    width: 20%;
+    }
+
     figcaption {
         background-color: #5ac111;
         border-radius: 10px;
@@ -94,5 +105,9 @@ figure video {
     article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button{
+        font-size: 200%;
     }
 }

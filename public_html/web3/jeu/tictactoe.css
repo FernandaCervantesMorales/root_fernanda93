@@ -60,6 +60,22 @@ h3{
     max-width: 120px;
 }
 
+.spiral {
+    position: fixed;
+    left: 0;
+    display: block;
+    height: 150px;
+    width: auto;
+}
+
+.star {
+    position: fixed;
+    right: 0;
+    display: block;
+    height: 150px;
+    width: auto;
+}
+
 #replay{
     background-color: rgb(5, 65, 102);
 
@@ -72,12 +88,55 @@ h3{
     color: rgb(211, 48, 75);
 }
 
-body{
-    background-color: rgb(1, 29, 52);
+.button{
+    background-color: rgb(21, 105, 158);
+
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+
+    border: 2px dashed rgb(215, 7, 73);
+    color: rgb(211, 48, 75);
 }
+
+body{
+    background-image: url(bg.png);
+    background-color: #063650;
+    background-size: contain;
+    bottom: 0;
+}
+
+footer {
+    background-color: rgb(5, 65, 102);
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 5px dashed rgb(215, 7, 73);
+}
+
 
 @media screen and (min-width: 1020px) {
     h1 {
     font-size: 400%;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    .spiral {
+        position: fixed;
+        left: 0;
+        display: block;
+        height: 50%;
+        width: auto;
+    }
+
+    .star {
+        position: fixed;
+        right: 0;
+        display: block;
+        height: 50%;
+        width: auto;
     }
 }
