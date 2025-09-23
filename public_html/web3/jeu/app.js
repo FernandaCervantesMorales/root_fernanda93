@@ -2,7 +2,12 @@
 let cases = document.querySelectorAll(".case");
 let replayBtn = document.querySelector("#replay");
 let paneauMessage = document.querySelector("#message");
-panneauMessageGaganant = document.querySelector("#message img")
+let panneauMessageGaganant = document.querySelector("#message img")
+let nul = document.getElementById("nul");
+let yaygagnant1 = document.getElementById("yaygagnant1");
+let yaygagnant2 = document.getElementById("yaygagnant2");
+let yaynul = document.getElementById("yaynul");
+let winner = false;
 
 let joueurX = true;
 let gagnant = '';
@@ -36,6 +41,11 @@ for (let boite of cases) {
 } 
 
 const valide = function () {
+    let allUsed = Array.from(cases).every(boite => !boite.active);
+    if (allUsed && !winner) {
+        console.log("C'est une partie nulle!");
+        nul.classList.add("active");
+    }
     for (let patron of patrons) {
 //        let val1 = cases[patron[0]].innerText;
 //        let val2 = cases[patron[1]].innerText;
@@ -67,3 +77,12 @@ replayBtn.addEventListener("click", function () {
     audio.play();
 });
 
+yaynul.addEventListener("click", function () {
+    for (let boite of cases) {
+        boite.active = true;
+        boite.style.backgroundImage = "";
+        joueurX = true;
+    }
+    winner = false;
+    nul.classList.remove("active");
+});
