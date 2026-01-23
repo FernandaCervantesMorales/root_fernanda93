@@ -8,14 +8,14 @@ document.querySelector("#gameBox").appendChild(canvas);
 // Background image
 var bgReady = false;
 var bgImage = new Image();
-bgImage.src = "img/background.png";
+bgImage.src = "img/tiles.png";
 bgImage.onload = function () {
 	bgReady = true; 
 };
 
 var winReady = false;
 var winImage = new Image(); 
-winImage.src = "img/win.png"; 
+winImage.src = "img/winner.png"; 
 winImage.onload = function () {
 	winReady = true; 
 };
@@ -34,9 +34,16 @@ goodyImage.onload = function () {
 	goodyReady = true; 
 };
 
+var girlReady = false;
+var girlImage = new Image();
+girlImage.src = "img/heart.png";
+girlImage.onload = function() {
+	girlReady = true;
+}
+
 var baddieReady = false;
 var baddieImage = new Image();
-baddieImage.src = "img/baddie.png";
+baddieImage.src = "img/bad.png";
 baddieImage.onload = function(){
     baddieReady = true;
 };
@@ -51,16 +58,19 @@ loseImage.onload = function () {
 //global game objects 
 var player = {
 	speed: 5, // movement in pixels per second 
-	width: 32,
-	height: 32
+	width: 95,
+	height: 95
 };
 var goodies = [ 
 	{ width: 32, height: 32 },
 	{ width: 32, height: 32 },
 	{ width: 32, height: 32 }
 ];
-var baddies = [];
-
+var baddies = [
+	{ width: 60, height: 60 },
+	{ width: 60, height: 60 },
+	{ width: 60, height: 60 }
+];
 var gameOver;
 
 var vX = 0;
@@ -69,19 +79,19 @@ var vY = 0;
 //keyboard controls
 addEventListener("keydown", function (e) {
 	
-	if (e.keyCode == 38) { // UP
+	if ((e.keyCode == 38) || (e.keyCode == 87)) { // UP
 		vX = 0;
 		vY = -player.speed;
 	}
-	if (e.keyCode == 40) { // DOWN
+	if ((e.keyCode == 40) || (e.keyCode == 83)) { // DOWN
 		vX = 0;
 		vY = player.speed;
 	}
-	if (e.keyCode == 37) { // LEFT
+	if ((e.keyCode == 37) || (e.keyCode == 65)) { // LEFT
 		vX = -player.speed;
 		vY = 0;
 	}
-	if (e.keyCode == 39) { // RIGHT
+	if ((e.keyCode == 39) || (e.keyCode == 68)) { // RIGHT
 		vX = player.speed;
 		vY = 0;
 	}
@@ -154,7 +164,7 @@ var main = function () {
 				(canvas.height-winImage.height)/2);
 		}
 	}
-	if (gameOver) {
+	else if (gameOver) {
         //LOSE display lose frame
         if (loseReady) {
             ctx.drawImage(loseImage, (canvas.width - loseImage.width) / 2,
@@ -245,22 +255,6 @@ var checkWin = function () {
 	}
 };
 
-var render_end = function () {
-    if (bgReady) {
-		ctx.drawImage(bgImage, b, canvas.height-bgImage.height);
-
-        // Set the initial x-coordinate for drawing
-        let x = b;
-
-        // Repeat the drawing of the background image along the x-axis
-        while (x < canvas.width) {
-            ctx.drawImage(bgImage, x, canvas.height - bgImage.height);
-            x += bgImage.width - 5; // Adjust this value to control the overlap
-            ctx.drawImage(bgImage, x, canvas.height - bgImage.height);
-        }
-        document.getElementById("lose").style.display="block";
-	}
-};
 
 var spawnBaddie = function () {
 	//push() adds an item to the array, a new goodie

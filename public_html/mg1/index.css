@@ -9,11 +9,11 @@ html {
 }
 
 header {
-    background-image: url(./img/header_bg.jpg);
+    background-color: #000000;
     border-radius: 20px;
     border: 6px dashed #5ac111;
     height: 100%;
-    color: #000000;
+    color: #00ff04;
 }
 
 body {
@@ -87,10 +87,9 @@ figure {
     display: grid;
 }
 
-figure video {
-    max-width: 100%;
-    height: auto;
-    border: 3px dashed #5ac111;
+iframe {
+    aspect-ratio: 16/9;
+    width: 100%;
 }
 
 @media screen and (min-width: 1020px) {
