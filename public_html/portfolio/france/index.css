@@ -106,3 +106,16 @@ a#nav:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+
+div.scroll-container{
+    background-color: rgb(186, 216, 246);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+div.scroll-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
