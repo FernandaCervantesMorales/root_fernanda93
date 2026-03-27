@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js">
+      AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+    var lastIndex = -1;
+    var COLORS = ['red', 'green', 'blue'];
+    this.el.addEventListener('click', function (evt) {
+      lastIndex = (lastIndex + 1) % COLORS.length;
+      this.setAttribute('material', 'color', COLORS[lastIndex]);
+      console.log('I was clicked at: ', evt.detail.intersection.point);
+
+      //if (this.getAttribute("id") == "object") (
+      //  alert("bitch")
+      //)
+    });
+  }
+ });
+    </script>
+  </head>
+  <body>
+    <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+      <a-box position="-2.46144 0.5 -4.46144" rotation="0 45 0" color="#4CC3D9" material="color: #75472f" scale="1 1 0.17725"></a-box><a-box position="-2.37857 0.5 -4.37857" rotation="0 45 0" color="#4CC3D9" scale="1 1 0.0759" material="color: #432a23"></a-box>
+      
+      <a-cylinder position="-2.33432 0.51 -4.34" radius="0.5" height="1.5" color="#FFC65D" geometry="radius: 0.48" scale="1 0.0083 1" rotation="0 -43.47 -90.06"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90.05 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
