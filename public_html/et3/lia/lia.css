@@ -3,17 +3,120 @@
     scroll-behavior: smooth;
 }
 
+ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    background-color: rgb(255, 39, 129);
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    font-family: "Bitcount Prop Single", system-ui;
+      font-optical-sizing: auto;
+     font-weight: 300;
+     font-style: normal;
+     size: 200%;
+     font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+header {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 238, 230);
+    height: 30rem;
+    text-align: center;
+}
+
 .about {
-    background-color: rgb(255, 221, 225);
+    
+    background-color: rgb(255, 216, 239);
     overflow: hidden;
 }
 
 .substyles {
+    padding: 1.5rem;
     background-color: rgb(208, 246, 255);
     overflow: hidden;
 }
 
+#ganguro {
+
+    padding: 1rem;
+    background-color: rgb(255, 167, 218);
+}
+
+#himegyaru {
+
+    padding: 1rem;
+    background-color: rgb(255, 216, 239);
+}
+
+#tsuyome {
+
+    padding: 1rem;
+    background-color: rgb(174, 229, 255);
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+}
+
+.description img {
+    width: 100%;
+    height: auto;
+}
+
+.desc-text {
+    background-color: rgb(255, 249, 243);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: rgb(226, 226, 226) dashed 4px;
+}
+
+img {
+       overflow-clip-margin: content-box;
+       overflow: clip;
+       border-radius: 1rem;
+}
+
+h1 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 400%;
+}
+
+h2 {
+    padding: 1.5rem;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
 body {
-    background-color: antiquewhite;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+}
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 238, 230)
 }
 
