@@ -4,9 +4,14 @@
   </head>
   <body>
     <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+      <a-scene>
+        <a-assets>
+          <a-asset-item id="vinyl" src="./img/red_vinyl.glb"></a-asset-item>
+        </a-assets>
+
       <a-box position="-1.51522 1.58962 -1.81968" rotation="83.50745272472723 38.09940154501922 87.62644631392271" color="#4CC3D9" material="color: #712a19" scale="0.18 1 1"></a-box>
       <a-sky src="img/bg.jpg"></a-sky>
-      <a-gltf-model id="vynil" cursor-listener src="img/red_vinyl.gltf" gltf-model="red_vinyl.gltf" position="0 2.31631 0"></a-gltf-model>
+      <a-gltf-model gltf-model="#vinyl" position="0 2.31631 0"></a-gltf-model>
     </a-scene>
   </body>
 </html>
