@@ -3,6 +3,17 @@
     scroll-behavior: smooth;
 }
 
+.about {
+    background-color: rgb(255, 221, 225);
+    overflow: hidden;
+}
+
+.substyles {
+    background-color: rgb(208, 246, 255);
+    overflow: hidden;
+}
+
 body {
     background-color: antiquewhite;
 }
+
