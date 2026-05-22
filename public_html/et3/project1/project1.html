@@ -4,14 +4,17 @@
   </head>
   <body>
     <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
-      <a-scene>
+      <a-scene inspector="" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
         <a-assets>
           <a-asset-item id="vinyl" src="./img/red_vinyl.glb"></a-asset-item>
         </a-assets>
 
-      <a-box position="-1.51522 1.58962 -1.81968" rotation="83.50745272472723 38.09940154501922 87.62644631392271" color="#4CC3D9" material="color: #712a19" scale="0.18 1 1"></a-box>
+      <a-box position="-1.51522 1.58 -1.75968" rotation="83.50745272472723 38.09940154501922 87.62644631392271" color="#4CC3D9" material="color: #712a19" scale="0.2 1.29 1.23"></a-box><a-box position="4.85478 1.58962 -1.81968" rotation="83.50745272472723 38.09940154501922 87.62644631392271" color="#4CC3D9" material="color: #712a19" scale="0.2 1.72 1.23"></a-box>
       <a-sky src="img/bg.jpg"></a-sky>
-      <a-gltf-model gltf-model="#vinyl" position="0 2.31631 0"></a-gltf-model>
+      <a-gltf-model gltf-model="./img/red_vinyl.glb" position="-1.42 1.58631 -1.64" rotation="0 -49.08 3.15" scale="0.2 0.2 0.2" rotation="0 0 0" animation="property: rotation; to: 360 -48 0; loop: true; dur: 10000"></a-gltf-model><a-gltf-model gltf-model="./img/red_vinyl.glb" position="5.54 1.64631 -1.7" rotation="0 -40.14 3.15" animation="property: rotation; to: 360 -48 0; loop: true; dur: 10000" scale="0.2 0.2 0.2"></a-gltf-model>
     </a-scene>
+  
+</a-scene>
   </body>
 </html>
