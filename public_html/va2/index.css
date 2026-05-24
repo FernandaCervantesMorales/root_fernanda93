@@ -1,0 +1,27 @@
+body {
+    background-image: url();
+}
+
+header {
+    background-color: rgb(198, 255, 113);
+}
+
+main {
+    background-color: rgb(106, 194, 106);
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+}
+
+article iframe {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+}
+
