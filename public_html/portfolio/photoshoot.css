@@ -1,0 +1,77 @@
+* {
+    background-color: var(--black);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+header {
+    height: 5rem;
+}
+
+body {
+    background-image: url(photoshoot/red_flannel_pattern.jpg);
+
+}
+
+.media {
+    column-count: 4;
+    column-gap: 1rem;
+    padding: 0 2rem
+}
+
+.item {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: filter .3s ease
+}
+
+.image:hover {
+    filter: grayscale(1)
+}
+
+.info {
+    padding: .5rem 0
+}
+
+.info h3 {
+    font-size: 1rem;
+    margin: 0
+}
+
+.info p {
+    font-size: .85rem;
+    opacity: .7;
+    margin: .2rem 0 0
+}
+
+@media (max-width: 1200px) {
+    .media {
+        column-count:3
+    }
+}
+
+@media (max-width: 768px) {
+    .media {
+        column-count:2;
+        margin: 0
+    }
+
+    header p {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .media {
+        column-count:1
+    }
+}
